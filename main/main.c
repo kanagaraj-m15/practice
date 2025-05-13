@@ -137,4 +137,6 @@ void app_main(void)
     // Create tasks for master and slave
     xTaskCreate(i2c_master_task, "i2c_master", 2048, NULL, 10, NULL);
     xTaskCreate(i2c_slave_task, "i2c_slave", 2048, NULL, 10, NULL);
+    
+    printf("end of app main");
 }
